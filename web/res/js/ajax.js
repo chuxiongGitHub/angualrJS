@@ -7,8 +7,8 @@ $(document).ready(function () {
         url: 'http://localhost/user/getAll',
         method: 'GET'
     }).then(function (data, status, jqxhr) {
-        $('.user-id').append(data);
-        $('.user-username').append(data.username);
+        $('.user-id').append(data.data.id);
+        $('.user-username').append(data.data.username);
         console.log(jqxhr);
         console.log(data);
         console.log(data.data.id)

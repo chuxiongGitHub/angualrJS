@@ -26,12 +26,14 @@
   <tr>
     <th>id</th>
     <th>username</th>
+    <th>createTime</th>
   </tr>
   <tr ng-repeat="user in users">
     <td>
       {{user.id}}
     </td>
     <td>{{user.userName}}</td>
+    <td>{{user.createTime}}</td>
   </tr>
 </table>
   </div>
