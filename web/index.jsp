@@ -22,7 +22,18 @@
   <input type="text" ng-model="name">
   <p>{{name}}</p>
   <div ng-controller="MyController">
-
+<table class="table table-bordered">
+  <tr>
+    <th>id</th>
+    <th>username</th>
+  </tr>
+  <tr ng-repeat="user in users">
+    <td>
+      {{user.id}}
+    </td>
+    <td>{{user.userName}}</td>
+  </tr>
+</table>
   </div>
   </body>
 </html>

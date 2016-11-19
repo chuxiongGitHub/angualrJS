@@ -10,8 +10,9 @@ myAngular.controller("MyController", function ($scope, $http) {
     )
         .success(function (data, status) {
             console.log(status);
-            console.info(data);
+            console.info(data.data);
             console.info(data.data.id)
+            $scope.users=data;
         });
 });
 
