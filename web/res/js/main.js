@@ -12,7 +12,7 @@ myAngular.controller("MyController", function ($scope, $http) {
             console.log(status);
             console.info(data.data);
             console.info(data.data.id)
-            $scope.users=data;
+            $scope.users=data.data;
         });
 });
 
